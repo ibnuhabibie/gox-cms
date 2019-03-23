@@ -1,0 +1,117 @@
+body {
+    background-color: #f0f0f0;
+    color: #768191;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+}
+
+@import "variables";
+@import "typography";
+@import "nav";
+@import "breadcrumb";
+
+main {
+    display: inline-block;
+    width: 100%;
+    padding-left: 320px;
+    transition: .5s ease;
+
+    .main-container {
+        margin-top: 60px;
+    }
+
+}
+@media screen and (max-width: 800px) {
+    main {
+        padding-left: 0 !important;
+    }
+}
+
+// LOGIN
+
+body.login {
+    background-image: url(https://images.unsplash.com/photo-1550338861-b7cfeaf8ffd8?fit=crop&w=1350&q=80);
+    background-color: $white;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.login-container {
+    .faded-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(180deg,rgba(21,21,28,0) 0,rgba(21,21,28,.1) 40%,rgba(21,21,28,.3) 55%,rgba(21,21,28,.61) 75%, $primary);
+    }
+    .login-sidebar {
+        border-top: 5px solid $accent;
+        min-height: 100vh;
+        justify-content: center;
+        background: $white;
+		padding: 0;
+		width: 300px;
+    }
+
+    .login-content {
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        padding: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .login-tm {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        margin-top: -100px;
+        left: 30px;
+
+        .logo {
+            svg {
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                color: $white;
+                margin-top: 5px;
+            }
+        }
+
+        .copy {
+            width: auto;
+            padding-left: 50px;
+
+            h1 {
+                display: inline-block;
+                vertical-align: middle;
+                color: $white;
+                z-index: 9999;
+                text-transform: uppercase;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 45px;
+				margin-left: 14px;
+				margin-bottom: 0;
+            }
+
+            p {
+                color: $white;
+                font-size: 13px;
+                max-width: 650px;
+                opacity: .9;
+                z-index: 99;
+                font-weight: 300;
+                left: 15px;
+                position: relative;
+                top: -12px;
+            }
+        }
+    }
+}

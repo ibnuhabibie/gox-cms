@@ -1,0 +1,27 @@
+{
+    "name": "mungil/gox",
+    "type": "library",
+    "require": {
+        "laravel/framework": "~5.8.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ibnu Habibie",
+            "email": "bhentz94@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Mungil\\Gox\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mungil\\Gox\\GoxServiceProvider"
+            ]
+        }
+    }
+}

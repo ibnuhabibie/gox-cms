@@ -1,0 +1,371 @@
+body {
+  background-color: #f0f0f0;
+  color: #768191;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 10px 0;
+  font-family: -apple-system, BlinkMacSystemFont, segoe ui, roboto, oxygen, ubuntu, cantarell, fira sans, droid sans, helvetica neue, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-weight: 300;
+  color: #2c2c2c;
+}
+
+.semi-bold {
+  font-weight: 400 !important;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.text-black {
+  color: #2c2c2c;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  transition: 0.5s ease;
+}
+
+nav .menu {
+  height: 100%;
+}
+
+nav .menu .main-menu {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 100%;
+  vertical-align: top;
+  background: #151c2e;
+  z-index: 2;
+}
+
+nav .menu .main-menu .logo {
+  width: 71px;
+  line-height: 60px;
+  height: 60px;
+  background: #00ada1;
+  display: block;
+  text-align: center;
+  color: #fff;
+}
+
+nav .menu .main-menu .logo span,
+nav .menu .main-menu .logo i {
+  font-size: 35px;
+}
+
+nav .menu .main-menu .main-menu-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #151c2e;
+}
+
+nav .menu .main-menu .main-menu-content {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+nav .menu .main-menu .main-menu-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+nav .menu .main-menu ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+nav .menu .main-menu ul li {
+  text-align: center;
+}
+
+nav .menu .main-menu ul li a {
+  display: block;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav .menu .main-menu ul li span {
+  display: inline-block;
+  font-size: 20px;
+  transition: 0.5s ease;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 0;
+  background: transparent;
+}
+
+nav .menu .main-menu ul li span i {
+  vertical-align: middle;
+}
+
+nav .menu .main-menu ul li.active span,
+nav .menu .main-menu ul li :hover span {
+  border-radius: 10px;
+  background: #00ada1;
+}
+
+nav .menu .sub-menu {
+  display: inline-block;
+  width: 252px;
+  height: 100%;
+  vertical-align: top;
+  background: #151e33;
+  margin-left: -5px;
+  transition: 0.5s ease;
+  z-index: 1;
+}
+
+nav .menu .sub-menu h1.page-title {
+  height: 60px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  padding-left: 20px;
+  line-height: 60px;
+  margin: 0;
+}
+
+nav .menu .sub-menu .sub-menu-content {
+  position: relative;
+  height: 100%;
+  overflow-y: auto;
+}
+
+nav .menu .sub-menu section {
+  padding-top: 20px;
+}
+
+nav .menu .sub-menu section .section-title {
+  color: #00ada1;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-left: 20px;
+}
+
+nav .menu .sub-menu section ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+nav .menu .sub-menu section ul li {
+  padding: 5px 0 5px 20px;
+  margin: 0 10px;
+}
+
+nav .menu .sub-menu section ul li.active {
+  background: #fff;
+  border-radius: 5px;
+}
+
+nav .menu .sub-menu section ul li.active a {
+  color: #151c2e;
+}
+
+nav .menu .sub-menu section ul li.sub-level {
+  padding-left: 0;
+}
+
+nav .menu .sub-menu section ul li.sub-level li {
+  padding-left: 40px;
+}
+
+nav .menu .sub-menu section ul a {
+  display: block;
+  color: #768191;
+}
+
+nav .menu .sub-menu section ul a:hover {
+  text-decoration: none;
+  color: #00ada1;
+}
+
+body.min main {
+  padding-left: 70px;
+}
+
+body.min .sub-menu {
+  margin-left: -255px;
+}
+
+body.min nav .menu .sub-menu .menu-toggle {
+  display: none;
+}
+
+body.min nav .menu .main-menu .menu-toggle {
+  display: block;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  line-height: 60px;
+  background: #fff;
+  margin-left: 2px;
+}
+
+header .menu-toggle {
+  transition: 0.5s ease;
+  font-size: 20px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #151c2e;
+  z-index: 1;
+  cursor: pointer;
+}
+
+header .menu-toggle i {
+  vertical-align: middle;
+  margin-top: -5px;
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    z-index: 2;
+  }
+
+  body.min nav {
+    left: -70px;
+  }
+}
+
+.breadcrumb {
+  background: none;
+}
+
+main {
+  display: inline-block;
+  width: 100%;
+  padding-left: 320px;
+  transition: 0.5s ease;
+}
+
+main .main-container {
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    padding-left: 0 !important;
+  }
+}
+
+body.login {
+  background-image: url(https://images.unsplash.com/photo-1550338861-b7cfeaf8ffd8?fit=crop&w=1350&q=80);
+  background-color: #fff;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.login-container .faded-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(21, 21, 28, 0) 0, rgba(21, 21, 28, 0.1) 40%, rgba(21, 21, 28, 0.3) 55%, rgba(21, 21, 28, 0.61) 75%, #151c2e);
+}
+
+.login-container .login-sidebar {
+  border-top: 5px solid #00ada1;
+  min-height: 100vh;
+  justify-content: center;
+  background: #fff;
+  padding: 0;
+  width: 300px;
+}
+
+.login-container .login-content {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  padding: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.login-container .login-tm {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  margin-top: -100px;
+  left: 30px;
+}
+
+.login-container .login-tm .logo svg {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #fff;
+  margin-top: 5px;
+}
+
+.login-container .login-tm .copy {
+  width: auto;
+  padding-left: 50px;
+}
+
+.login-container .login-tm .copy h1 {
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  z-index: 9999;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 45px;
+  margin-left: 14px;
+  margin-bottom: 0;
+}
+
+.login-container .login-tm .copy p {
+  color: #fff;
+  font-size: 13px;
+  max-width: 650px;
+  opacity: 0.9;
+  z-index: 99;
+  font-weight: 300;
+  left: 15px;
+  position: relative;
+  top: -12px;
+}
+
